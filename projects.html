@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Soares - Software Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="main-background">
+
+  <a class="page-navigation-button navigation__back" role="button" href="index.html">
+    Back
+  </a>
+  <main>
+    <h1>Projects</h1>
+
+    <!--------------  ArcelorMittal  -------------->
+<!--    <h2 id="arcelor" class="project-type">ArcelorMittal</h2>-->
+<!--    <div class="card">-->
+<!--      <h3 id="arcelor__real-time-dashboard">-->
+
+<!--      </h3>-->
+<!--    </div>-->
+
+    <!--------------  Fisarmonica  -------------->
+    <h2 id=fisarmonica" class="project-type">Fisarmonica</h2>
+    <div class="card">
+      <h3 id="fisarmonica__performance-optimization">
+        Web Platform Performance Optimization
+      </h3>
+      <p>
+        The application originally took up to <strong>8 seconds</strong> to fully load each page, which resulted in frequent user complaints and poor perceived performance.
+        After internal discussions, I was responsible for investigating the root causes and implementing technical improvements.
+      </p>
+
+      <p>
+        The platform stack at the time was:
+      </p>
+
+      <ul>
+        <li><strong>Framework:</strong> WordPress (PHP)</li>
+        <li><strong>Database:</strong> MariaDB</li>
+        <li><strong>Cloud provider:</strong> SaveInCloud</li>
+        <li><strong>CDN:</strong> Bunny.net</li>
+      </ul>
+
+      <p>
+        After analyzing application behavior and infrastructure bottlenecks, I identified the main performance issues and implemented the following improvements:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Private page caching:</strong> Enabled fast load times for returning users, delivering an immediate performance gain.
+        </li>
+        <li>
+          <strong>Lazy loading:</strong> Shifted part of the rendering workload to the frontend, reducing server-side processing and improving perceived load time.
+        </li>
+        <li>
+          <strong>Public page caching:</strong> After introducing lazy loading, pages could be safely cached publicly while private data was fetched asynchronously on the client side.
+        </li>
+        <li>
+          <strong>On-demand plugin loading:</strong> Modified WordPress initialization to load only required plugins per request, significantly improving API response times.
+        </li>
+        <li>
+          <strong>Cloud functions:</strong> Introduced serverless functions to deliver critical page data, improving resilience during peak traffic and server overload.
+        </li>
+      </ul>
+
+      <p>
+        As a result, full page load time was reduced to approximately <strong>2 seconds</strong> (a <strong>4× improvement</strong>), while also significantly lowering overall server load and increasing platform stability.
+      </p>
+
+      <h3 id="fisarmonica__visual-enhancement">Web Platform UX and Visual Enhancement</h3>
+      <p>
+        This project focused on the visual enhancement and user experience improvement of an existing web platform.
+        I was responsible for implementing the interfaces designed by the web designer and proposing improvements
+        to increase usability, consistency, and overall user satisfaction.
+      </p>
+
+      <p>
+        Our main goal was to significantly improve the user experience by refining visual elements,
+        navigation flow, and interaction patterns across the platform.
+      </p>
+
+      <p>
+        To better understand how users interacted with the application, we leveraged analytics and behavior
+        tools such as <strong>Microsoft Clarity</strong> and <strong>Hotjar</strong>. These insights allowed us
+        to identify usability friction points, analyze user journeys, and propose data-driven UX enhancements.
+      </p>
+
+      <p>
+        Key contributions included:
+      </p>
+
+      <ul>
+        <li>
+          Implementation of responsive and accessible UI components based on the designer’s specifications,
+          ensuring visual consistency across desktop and mobile devices.
+        </li>
+        <li>
+          UX improvements driven by user behavior analysis, including layout refinements, clearer information
+          hierarchy, and optimized navigation flows.
+        </li>
+        <li>
+          Active collaboration with design, product, and business teams to propose and validate interface
+          enhancements.
+        </li>
+        <li>
+          Introduction of gamification features such as <strong>points accumulation</strong>,
+          <strong>achievement badges</strong>, and <strong>leaderboards</strong> to increase user engagement
+          and retention.
+        </li>
+      </ul>
+
+      <p>
+        As a result of these visual and UX improvements, the platform became more intuitive and engaging.
+        Combined with the efforts of the sales team, these changes helped <strong>almost double the user base</strong>,
+        directly supporting business growth and customer acquisition.
+      </p>
+    </div>
+  </main>
+
+
+<script src="https://kit.fontawesome.com/a9445b8ed4.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/lodash.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/clock.js"></script>
+
+</body>
+
+</html>

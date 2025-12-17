@@ -1,0 +1,17 @@
+main {
+  width: fit-content;
+  margin: 5rem auto;
+  padding: 0 7rem;
+}
+
+h1 {
+  width: fit-content;
+}
+
+.project-type {
+  margin-bottom: 0;
+}
+
+.card h3:not(:first-child) {
+  margin-top: 2rem;
+}
