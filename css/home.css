@@ -108,7 +108,7 @@ body {
 
 .icon-item {
   margin-bottom: .5rem;
-  transition: filter 300ms;
+  transition: color 300ms, filter 300ms;
 }
 
 .icon-item i {
