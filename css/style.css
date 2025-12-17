@@ -342,6 +342,12 @@ button {
   rotate: 45deg;
 }
 
+@media (max-width: 1024px) {
+  .navigation__back {
+    left: 1rem;
+  }
+}
+
 @keyframes card__fade-in {
   from {
     opacity: 0;
