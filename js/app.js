@@ -49,7 +49,7 @@ $(document).ready(function () {
   const anchor = window.location.hash;
   $(anchor).addClass('anchor');
 
-  showCards(window.innerWidth > 1024);
+  showCards(false);
 
   bindPopupActions();
 
