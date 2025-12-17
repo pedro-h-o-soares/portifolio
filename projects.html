@@ -29,117 +29,169 @@
 
 <body class="main-background">
 
-  <a class="page-navigation-button navigation__back" role="button" href=".">
-    Back
-  </a>
-  <main>
-    <h1>Projects</h1>
+<a class="page-navigation-button navigation__back" role="button" href=".">
+  Back
+</a>
+<main>
+  <h1>Main Projects</h1>
 
-    <!--------------  ArcelorMittal  -------------->
-<!--    <h2 id="arcelor" class="project-type">ArcelorMittal</h2>-->
-<!--    <div class="card">-->
-<!--      <h3 id="arcelor__real-time-dashboard">-->
+  <!--------------  ArcelorMittal  -------------->
+  <h2 id="arcelor" class="project-type">ArcelorMittal</h2>
+  <div class="card">
+    <h3 id="arcelor__large-scale-dashboard">
+      Large-Scale Data Analytics Dashboard
+    </h3>
+    <p>
+      This project involved the design and implementation of a large-scale analytics dashboard for the
+      <strong>technical production unit</strong>, built on top of a Databricks environment containing
+      more than <strong>one billion rows</strong> of coil production measurements collected over the last
+      three years.
+    </p>
 
-<!--      </h3>-->
-<!--    </div>-->
+    <p>
+      The goal of the dashboard was to enable technical and production teams to run simulations over
+      historical data in order to evaluate whether new customer orders could be fulfilled
+      <strong>without risking material loss</strong> or compromising production constraints.
+    </p>
 
-    <!--------------  Fisarmonica  -------------->
-    <h2 id=fisarmonica" class="project-type">Fisarmonica</h2>
-    <div class="card">
-      <h3 id="fisarmonica__performance-optimization">
-        Web Platform Performance Optimization
-      </h3>
-      <p>
-        The application originally took up to <strong>8 seconds</strong> to fully load each page, which resulted in frequent user complaints and poor perceived performance.
-        After internal discussions, I was responsible for investigating the root causes and implementing technical improvements.
-      </p>
+    <p>
+      Simulation performance was a critical requirement, as users needed to evaluate
+      <strong>multiple scenarios in a short period of time</strong>. Long execution times would make
+      iterative analysis impractical and directly impact decision-making.
+    </p>
 
-      <p>
-        The platform stack at the time was:
-      </p>
+    <p>
+      To achieve the required performance and scalability, I led the following technical initiatives:
+    </p>
 
-      <ul>
-        <li><strong>Framework:</strong> WordPress (PHP)</li>
-        <li><strong>Database:</strong> MariaDB</li>
-        <li><strong>Cloud provider:</strong> SaveInCloud</li>
-        <li><strong>CDN:</strong> Bunny.net</li>
-      </ul>
+    <ul>
+      <li>
+        <strong>Query optimization:</strong> Conducted an in-depth analysis of complex queries involving
+        multiple filters and joins, restructuring them to minimize execution time on large datasets.
+      </li>
+      <li>
+        <strong>View materialization:</strong> Identified performance bottlenecks and created
+        materialized views to precompute expensive operations, significantly reducing query latency.
+      </li>
+      <li>
+        <strong>Dashboard implementation:</strong> Designed and implemented the final solution using
+        <strong>Databricks Dashboards</strong>, enabling interactive simulations over the full dataset.
+      </li>
+    </ul>
 
-      <p>
-        After analyzing application behavior and infrastructure bottlenecks, I identified the main performance issues and implemented the following improvements:
-      </p>
+    <p>
+      As a result, the dashboard was able to execute simulations over the entire dataset in
+      <strong>under 3 minutes</strong>, making it viable for real-time, scenario-based decision-making
+      in a high-stakes industrial environment.
+    </p>
+  </div>
 
-      <ul>
-        <li>
-          <strong>Private page caching:</strong> Enabled fast load times for returning users, delivering an immediate performance gain.
-        </li>
-        <li>
-          <strong>Lazy loading:</strong> Shifted part of the rendering workload to the frontend, reducing server-side processing and improving perceived load time.
-        </li>
-        <li>
-          <strong>Public page caching:</strong> After introducing lazy loading, pages could be safely cached publicly while private data was fetched asynchronously on the client side.
-        </li>
-        <li>
-          <strong>On-demand plugin loading:</strong> Modified WordPress initialization to load only required plugins per request, significantly improving API response times.
-        </li>
-        <li>
-          <strong>Cloud functions:</strong> Introduced serverless functions to deliver critical page data, improving resilience during peak traffic and server overload.
-        </li>
-      </ul>
+  <!--------------  Fisarmonica  -------------->
+  <h2 id=fisarmonica" class="project-type">Fisarmonica</h2>
+  <div class="card">
+    <h3 id="fisarmonica__performance-optimization">
+      Web Platform Performance Optimization
+    </h3>
+    <p>
+      The application originally took up to <strong>8 seconds</strong> to fully load each page, which resulted in
+      frequent user complaints and poor perceived performance.
+      After internal discussions, I was responsible for investigating the root causes and implementing technical
+      improvements.
+    </p>
 
-      <p>
-        As a result, full page load time was reduced to approximately <strong>2 seconds</strong> (a <strong>4× improvement</strong>), while also significantly lowering overall server load and increasing platform stability.
-      </p>
+    <p>
+      The platform stack at the time was:
+    </p>
 
-      <h3 id="fisarmonica__visual-enhancement">Web Platform UX and Visual Enhancement</h3>
-      <p>
-        This project focused on the visual enhancement and user experience improvement of an existing web platform.
-        I was responsible for implementing the interfaces designed by the web designer and proposing improvements
-        to increase usability, consistency, and overall user satisfaction.
-      </p>
+    <ul>
+      <li><strong>Framework:</strong> WordPress (PHP)</li>
+      <li><strong>Database:</strong> MariaDB</li>
+      <li><strong>Cloud provider:</strong> SaveInCloud</li>
+      <li><strong>CDN:</strong> Bunny.net</li>
+    </ul>
 
-      <p>
-        Our main goal was to significantly improve the user experience by refining visual elements,
-        navigation flow, and interaction patterns across the platform.
-      </p>
+    <p>
+      After analyzing application behavior and infrastructure bottlenecks, I identified the main performance issues and
+      implemented the following improvements:
+    </p>
 
-      <p>
-        To better understand how users interacted with the application, we leveraged analytics and behavior
-        tools such as <strong>Microsoft Clarity</strong> and <strong>Hotjar</strong>. These insights allowed us
-        to identify usability friction points, analyze user journeys, and propose data-driven UX enhancements.
-      </p>
+    <ul>
+      <li>
+        <strong>Private page caching:</strong> Enabled fast load times for returning users, delivering an immediate
+        performance gain.
+      </li>
+      <li>
+        <strong>Lazy loading:</strong> Shifted part of the rendering workload to the frontend, reducing server-side
+        processing and improving perceived load time.
+      </li>
+      <li>
+        <strong>Public page caching:</strong> After introducing lazy loading, pages could be safely cached publicly
+        while private data was fetched asynchronously on the client side.
+      </li>
+      <li>
+        <strong>On-demand plugin loading:</strong> Modified WordPress initialization to load only required plugins per
+        request, significantly improving API response times.
+      </li>
+      <li>
+        <strong>Cloud functions:</strong> Introduced serverless functions to deliver critical page data, improving
+        resilience during peak traffic and server overload.
+      </li>
+    </ul>
 
-      <p>
-        Key contributions included:
-      </p>
+    <p>
+      As a result, full page load time was reduced to approximately <strong>2 seconds</strong> (a <strong>4×
+      improvement</strong>), while also significantly lowering overall server load and increasing platform stability.
+    </p>
 
-      <ul>
-        <li>
-          Implementation of responsive and accessible UI components based on the designer’s specifications,
-          ensuring visual consistency across desktop and mobile devices.
-        </li>
-        <li>
-          UX improvements driven by user behavior analysis, including layout refinements, clearer information
-          hierarchy, and optimized navigation flows.
-        </li>
-        <li>
-          Active collaboration with design, product, and business teams to propose and validate interface
-          enhancements.
-        </li>
-        <li>
-          Introduction of gamification features such as <strong>points accumulation</strong>,
-          <strong>achievement badges</strong>, and <strong>leaderboards</strong> to increase user engagement
-          and retention.
-        </li>
-      </ul>
+    <h3 id="fisarmonica__visual-enhancement">Web Platform UX and Visual Enhancement</h3>
+    <p>
+      This project focused on the visual enhancement and user experience improvement of an existing web platform.
+      I was responsible for implementing the interfaces designed by the web designer and proposing improvements
+      to increase usability, consistency, and overall user satisfaction.
+    </p>
 
-      <p>
-        As a result of these visual and UX improvements, the platform became more intuitive and engaging.
-        Combined with the efforts of the sales team, these changes helped <strong>almost double the user base</strong>,
-        directly supporting business growth and customer acquisition.
-      </p>
-    </div>
-  </main>
+    <p>
+      Our main goal was to significantly improve the user experience by refining visual elements,
+      navigation flow, and interaction patterns across the platform.
+    </p>
+
+    <p>
+      To better understand how users interacted with the application, we leveraged analytics and behavior
+      tools such as <strong>Microsoft Clarity</strong> and <strong>Hotjar</strong>. These insights allowed us
+      to identify usability friction points, analyze user journeys, and propose data-driven UX enhancements.
+    </p>
+
+    <p>
+      Key contributions included:
+    </p>
+
+    <ul>
+      <li>
+        Implementation of responsive and accessible UI components based on the designer’s specifications,
+        ensuring visual consistency across desktop and mobile devices.
+      </li>
+      <li>
+        UX improvements driven by user behavior analysis, including layout refinements, clearer information
+        hierarchy, and optimized navigation flows.
+      </li>
+      <li>
+        Active collaboration with design, product, and business teams to propose and validate interface
+        enhancements.
+      </li>
+      <li>
+        Introduction of gamification features such as <strong>points accumulation</strong>,
+        <strong>achievement badges</strong>, and <strong>leaderboards</strong> to increase user engagement
+        and retention.
+      </li>
+    </ul>
+
+    <p>
+      As a result of these visual and UX improvements, the platform became more intuitive and engaging.
+      Combined with the efforts of the sales team, these changes helped <strong>almost double the user base</strong>,
+      directly supporting business growth and customer acquisition.
+    </p>
+  </div>
+</main>
 
 
 <script src="https://kit.fontawesome.com/a9445b8ed4.js" crossorigin="anonymous"></script>
