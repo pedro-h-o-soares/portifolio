@@ -142,6 +142,50 @@
       improvement</strong>), while also significantly lowering overall server load and increasing platform stability.
     </p>
 
+    <h3 id="fisarmonica__cloud-migration">Google Cloud Platform Migration</h3>
+    <p>
+      This project focused on the migration of the Fisarmonica learning platform from
+      <strong>SaveInCloud</strong> to <strong>Google Cloud Platform</strong>, with the goal of improving
+      scalability, reliability, and operational flexibility as the platform continued to grow.
+    </p>
+
+    <p>
+      The existing infrastructure presented limitations in scalability, resilience, and deployment
+      flexibility, especially during traffic peaks and platform updates. To address these challenges,
+      I designed and led the migration to a cloud-native architecture on Google Cloud.
+    </p>
+
+    <p>
+      The new infrastructure was built using the following core components:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Google Kubernetes Engine (GKE):</strong> Containerized the application and deployed it
+        on a managed Kubernetes cluster, enabling horizontal scaling, rolling updates, and improved
+        operational stability.
+      </li>
+      <li>
+        <strong>Cloud SQL:</strong> Migrated the relational database to a managed service, improving
+        reliability, backup management, and operational maintenance.
+      </li>
+      <li>
+        <strong>NFS:</strong> Implemented shared storage to support persistent data and media files
+        across multiple application instances.
+      </li>
+      <li>
+        <strong>Cloud Functions:</strong> Implemented serverless functions to handle
+        <strong>critical system endpoints</strong>, increasing resilience, isolating failure domains,
+        and ensuring availability during high-load scenarios.
+      </li>
+    </ul>
+
+    <p>
+      As a result of this migration, the platform achieved improved availability, easier scalability,
+      and a more robust deployment process. The cloud-native architecture provided a strong foundation
+      for future growth, performance optimization, and continued feature development.
+    </p>
+
     <h3 id="fisarmonica__visual-enhancement">Web Platform UX and Visual Enhancement</h3>
     <p>
       This project focused on the visual enhancement and user experience improvement of an existing web platform.
