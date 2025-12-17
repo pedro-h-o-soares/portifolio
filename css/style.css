@@ -293,7 +293,7 @@ button {
 .interactive-icon-card {
   translate: 0;
 
-  transition: translate 300ms;
+  transition: translate 300ms, color 300ms;
 }
 
 .active-icon {

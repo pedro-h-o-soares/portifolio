@@ -62,7 +62,8 @@ body {
 }
 
 .presentation-card__buttons:hover button:not(:hover),
-.presentation-card__buttons:hover a:not(:hover) {
+.presentation-card__buttons:hover a:not(:hover),
+.icon-list:hover .icon-item:not(:hover){
   filter: grayscale(1) opacity(0.5);
 }
 
@@ -107,6 +108,7 @@ body {
 
 .icon-item {
   margin-bottom: .5rem;
+  transition: filter 300ms;
 }
 
 .icon-item i {
