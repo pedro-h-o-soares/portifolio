@@ -11,6 +11,14 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+  font-family: 'Amarna';
+  src: url('../fonts/Amarna/Amarna-VariableFont_wght.ttf') format('truetype'),
+      url('../fonts/Amarna/Amarna-Italic-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 600;
+}
+
 * {
   box-sizing: border-box;
 }
