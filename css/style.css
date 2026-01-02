@@ -142,6 +142,11 @@ body {
   display: flow-root;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
+
 body:has(.popup.show) {
   overflow: hidden;
 }

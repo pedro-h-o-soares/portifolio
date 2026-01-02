@@ -40,9 +40,11 @@ function bindPopupActions() {
 
 function updateCurrentJob() {
   const date = config.lastJobStartingDate;
+  const month = date.toLocaleDateString('en-US', { month: 'short' });
+  const year = date.toLocaleDateString('en-US', { year: 'numeric' });
 
   $('.current-job-status').html(config.jobStatus);
-  $('.current-job-start').html(`Since ${moment(date).format('MMM/YYYY')}`)
+  $('.current-job-start').html(`Since ${month}/${year}`);
 }
 
 (function(c,l,a,r,i,t,y){
