@@ -36,132 +36,135 @@
 
 <body class="main-background">
 
-<div class="card-grid">
-  <div class="card presentation-card">
+<main role="main">
 
-    <div class="presentation-card__spaced-column">
-      <div>
-        <p class="text-alternate">Welcome</p>
-        <p>
-          Software Engineer with 4 years of experience building
-          <mark>scalable</mark>
-          ,
-          <mark>cloud-native</mark>
-          systems for real-world,
-          <mark>high-impact</mark>
-          applications.
-        </p>
-        <p>
-          I design and deliver reliable software solutions across industrial and web platforms, combining strong
-          engineering fundamentals, cloud architecture, and hands-on development. Experienced in leading technical
-          decisions, improving performance, and building systems ready to scale.
-        </p>
+  <div class="card-grid">
+    <div class="card presentation-card">
+
+      <div class="presentation-card__spaced-column">
+        <div>
+          <p class="text-alternate">Welcome</p>
+          <p>
+            Software Engineer with 4 years of experience building
+            <mark>scalable</mark>
+            ,
+            <mark>cloud-native</mark>
+            systems for real-world,
+            <mark>high-impact</mark>
+            applications.
+          </p>
+          <p>
+            I design and deliver reliable software solutions across industrial and web platforms, combining strong
+            engineering fundamentals, cloud architecture, and hands-on development. Experienced in leading technical
+            decisions, improving performance, and building systems ready to scale.
+          </p>
+        </div>
+
+        <div class="presentation-card__buttons">
+          <a href="https://github.com/pedro-h-o-soares" target="_blank" aria-label="Check my GitHub profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/pedro-h-o-soares" target="_blank" aria-label="Check my LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <button class="action__book-call" aria-label="Book a meeting with me">
+            Book a call
+          </button>
+        </div>
       </div>
 
-      <div class="presentation-card__buttons">
-        <a href="https://github.com/pedro-h-o-soares" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/pedro-h-o-soares" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <button class="action__book-call">
-          Book a call
-        </button>
+      <img src="img/me.jpg" alt="Pedro Soares photo" class="presentation-card__image" width="25%" height="100%"/>
+
+    </div>
+    <div class="card about-me-card">
+      <h3>About me</h3>
+      <p>
+        I am <strong>Pedro Soares</strong>, a Software Engineer with 4 years of experience building scalable, cloud-native
+        systems for industrial and web environments. With a focus on
+        <mark>system design</mark>
+        and
+        <mark>performance optimization</mark>
+        , I have strong background in:
+      </p>
+      <ul>
+        <li>.NET</li>
+        <li>Java Spring</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>Kubernetes</li>
+        <li>Docker</li>
+        <li>AWS</li>
+        <li>GCP</li>
+      </ul>
+      <p>
+        Currently pursuing a Master’s degree in Machine Learning applied to Photonics, with experience collaborating in
+        cross-functional and international teams. Driven by clean architecture, continuous learning, and delivering
+        reliable, high-impact software.
+      </p>
+    </div>
+    <div class="card contact-card">
+      <h3>
+        Let's start working together!
+        <br>
+        <small class="text-alternate">Contact me</small>
+      </h3>
+
+      <div class="icon-list">
+        <div class="icon-item interactive-icon-card">
+          <a href="mailto:p.h.o.soares@hotmail.com"><i class="fa-solid fa-envelope"></i>p.h.o.soares@hotmail.com</a>
+        </div>
+        <div class="icon-item interactive-icon-card">
+          <a href="https://linkedin.com/in/pedro-h-o-soares" target="_blank"><i
+            class="fa-brands fa-linkedin"></i>pedro-h-o-soares</a>
+        </div>
+        <div class="icon-item interactive-icon-card">
+          <a href="https://github.com/pedro-h-o-soares" target="_blank"><i
+            class="fa-brands fa-github"></i>pedro-h-o-soares</a>
+        </div>
+        <div class="icon-item interactive-icon-card">
+          <a href="tel:+5527998057628" target="_blank"><i class="fa-solid fa-phone"></i>+55 (27)
+            99805-7628</a>
+        </div>
       </div>
     </div>
-
-    <img src="img/me.jpg" alt="Pedro Soares photo" class="presentation-card__image" width="25%" height="100%"/>
-
+    <div class="card clock-card">
+      <span><span id="clock">00:00 AM</span> BRT</span>
+    </div>
+    <a class="card link-card" href="attachments/Resume.pdf" target="_blank" aria-label="View my resume">
+      <span class="link-card__title">Resume</span>
+      <i class="fa-solid fa-arrow-up icon-arrow-upright interactive-icon-card" direction="upright"></i>
+    </a>
+    <div class="card current-status-card">
+      <h3>Current status
+        <span class="active-icon">
+          <span class="active-icon__circle"></span>
+          <span class="active-icon__pulse"></span>
+        </span>
+      </h3>
+      <p>
+        <span class="current-job-status"></span>
+        <br>
+        <br>
+        <span class="text-alternate current-job-start"></span>
+      </p>
+    </div>
+    <a class="card link-card" href="projects.html" aria-label="View my projects">
+      <span class="link-card__title">Projects</span>
+      <i class="fa-solid fa-arrow-up icon-arrow-upright interactive-icon-card" direction="upright"></i>
+    </a>
   </div>
-  <div class="card about-me-card">
-    <h3>About me</h3>
-    <p>
-      I am <strong>Pedro Soares</strong>, a Software Engineer with 4 years of experience building scalable, cloud-native
-      systems for industrial and web environments. With a focus on
-      <mark>system design</mark>
-      and
-      <mark>performance optimization</mark>
-      , I have strong background in:
-    </p>
-    <ul>
-      <li>.NET</li>
-      <li>Java Spring</li>
-      <li>Angular</li>
-      <li>React</li>
-      <li>Kubernetes</li>
-      <li>Docker</li>
-      <li>AWS</li>
-      <li>GCP</li>
-    </ul>
-    <p>
-      Currently pursuing a Master’s degree in Machine Learning applied to Photonics, with experience collaborating in
-      cross-functional and international teams. Driven by clean architecture, continuous learning, and delivering
-      reliable, high-impact software.
-    </p>
-  </div>
-  <div class="card contact-card">
-    <h3>
-      Let's start working together!
-      <br>
-      <small class="text-alternate">Contact me</small>
-    </h3>
 
-    <div class="icon-list">
-      <div class="icon-item interactive-icon-card">
-        <a href="mailto:p.h.o.soares@hotmail.com"><i class="fa-solid fa-envelope"></i>p.h.o.soares@hotmail.com</a>
-      </div>
-      <div class="icon-item interactive-icon-card">
-        <a href="https://linkedin.com/in/pedro-h-o-soares" target="_blank"><i
-          class="fa-brands fa-linkedin"></i>pedro-h-o-soares</a>
-      </div>
-      <div class="icon-item interactive-icon-card">
-        <a href="https://github.com/pedro-h-o-soares" target="_blank"><i
-          class="fa-brands fa-github"></i>pedro-h-o-soares</a>
-      </div>
-      <div class="icon-item interactive-icon-card">
-        <a href="tel:+5527998057628" target="_blank"><i class="fa-solid fa-phone"></i>+55 (27)
-          99805-7628</a>
-      </div>
+  <div class="popup popup__book-call">
+    <i class="fa-solid fa-x popup__close"></i>
+    <div class="popup__content">
+      <!-- Google Calendar Appointment Scheduling begin -->
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ20kAMmdAar4le4tbcaWd4wFmKA7HpjbsTloI9jSiSkaVK-Ckeg601vEcPDF0IK6iXEgK21vp_b?gv=true"
+        style="border: 0" width="100%" height="100%" frameborder="0" loading="lazy"></iframe>
+      <!-- end Google Calendar Appointment Scheduling -->
     </div>
   </div>
-  <div class="card clock-card">
-    <span><span id="clock">00:00 AM</span> BRT</span>
-  </div>
-  <a class="card link-card" href="attachments/Resume.pdf" target="_blank">
-    <span class="link-card__title">Resume</span>
-    <i class="fa-solid fa-arrow-up icon-arrow-upright interactive-icon-card" direction="upright"></i>
-  </a>
-  <div class="card current-status-card">
-    <h3>Current status
-      <span class="active-icon">
-        <span class="active-icon__circle"></span>
-        <span class="active-icon__pulse"></span>
-      </span>
-    </h3>
-    <p>
-      <span class="current-job-status"></span>
-      <br>
-      <br>
-      <span class="text-alternate current-job-start"></span>
-    </p>
-  </div>
-  <a class="card link-card" href="projects.html">
-    <span class="link-card__title">Projects</span>
-    <i class="fa-solid fa-arrow-up icon-arrow-upright interactive-icon-card" direction="upright"></i>
-  </a>
-</div>
-
-<div class="popup popup__book-call">
-  <i class="fa-solid fa-x popup__close"></i>
-  <div class="popup__content">
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <iframe
-      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ20kAMmdAar4le4tbcaWd4wFmKA7HpjbsTloI9jSiSkaVK-Ckeg601vEcPDF0IK6iXEgK21vp_b?gv=true"
-      style="border: 0" width="100%" height="100%" frameborder="0" loading="lazy"></iframe>
-    <!-- end Google Calendar Appointment Scheduling -->
-  </div>
-</div>
+</main>
 
 <script src="https://kit.fontawesome.com/a9445b8ed4.js" crossorigin="anonymous" defer></script>
 <script src="js/moment.min.js" type="text/javascript" defer></script>
