@@ -206,7 +206,6 @@ button {
 }
 
 .card {
-  opacity: 0;
   padding: var(--card-padding);
   background-color: var(--card-background);
   color: var(--card-text);
@@ -216,9 +215,6 @@ button {
 
   overflow: hidden;
   transition: all 300ms;
-}
-
-.card.show {
   animation: card__fade-in 500ms forwards;
 }
 
