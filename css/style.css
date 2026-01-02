@@ -101,8 +101,8 @@ textarea {
   --secondary: rgb(239, 68, 68);
 
   --card-background: #151515;
-  --card-text: #afafaf;
-  --card-text-alternate: #6a6a6a;
+  --card-text: #cfcfcf;
+  --card-text-alternate: #a1a1a1;
   --card-border-radius: 1rem;
   --card-padding: 1rem;
   --card-font-size: 14px;
